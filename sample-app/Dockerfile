@@ -14,6 +14,6 @@
 
 FROM golang:1.10
 WORKDIR /go/src/app
-COPY . .
+COPY ./sample-app .
 RUN go install -v
 CMD ["app"]
