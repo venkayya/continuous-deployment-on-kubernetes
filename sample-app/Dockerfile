@@ -13,7 +13,8 @@
 # limitations under the License.
 
 FROM golang:1.10
-WORKDIR /go/src/sample-app
+WORKDIR /go/src/app
 COPY . .
+RUN ls -al
 RUN go install -v
 CMD ["app"]
